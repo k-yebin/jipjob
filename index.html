@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>집잡, 일자리 전문 매칭 플랫폼 </title>
+    <meta name="description" content="zipjob_clone">
+    <meta name="author" content="kang yebin" />
+    <link rel="shortcut icon" href="./images/icon_yellow.png" type="image/x-icon">
+    <!-- OGD (Open Graph Data) -->
+    <meta property="og:title" content="집잡 클론코딩 페이지" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="배포후 생성된 url" />
+    <meta property="og:img" content="배포후 생성된 img" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/3e1218b38a.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- JAVASCRIPT -->
+    <script type="module" src="./src/main.js" defer></script>
+    <!-- GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo_mobile_wrap">
+            <div class="logo_wrap">
+                <div class="main_logo reveal reveal_TTB">
+                    <img src="/images/main_logo.png" alt="메인로고">
+                </div>
+                <div class="main_logo02 reveal reveal_TTB">
+                    <img src="/images/main_logo01.png" alt="메인로고">
+                </div>
+            </div>
+            <div class="login_mobile">
+                <img src="./images/login.png" alt="모바일버전 로그인">
+            </div>
+        </div>
+        <div class="header_right">
+            <div class="lnb reveal reveal_TTB">
+                <img class=" reveal reveal_TTB" src="./images/lnb_logo01.png" alt="이상로고">
+                <img class="reveal reveal_TTB" data-delay="0.2" src="./images/lnb_logo02.png" alt="인스타그램로고">
+                <img class="reveal reveal_TTB" data-delay="0.35" src="./images/lnb_logo03.png" alt="블로그로고">
+                <img class="reveal reveal_TTB" data-delay="0.45" src="./images/login.png" alt="관리자접속하기">
+            </div>
+            <div class="lnb_mobile reveal reveal_TTB">
+                <div>
+                    <img src="./images/lnb_mobile01.png" alt="이상 소앤더스">
+                </div>
+                <div>
+                    <img src="./images/lnb_mobile02.png" alt="집잡 인스타그램">
+                </div>
+                <div>
+                    <img src="./images/lnb_mobile03.png" alt="집잡 블로그">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main reveal reveal_BTT">
+        <div class="main_inner">
+            <div class="main_background">
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT"></span>
+            </div>
+            <div class="main_description">
+                <h1 class="reveal reveal_BTT">일자리 매칭 <br /> <span>전문 플랫폼</span></h1>
+                <p class="reveal reveal_BTT" data-delay="0.2">
+                    현실과 동일한 인력 중계가 이루어지는 손 쉬운 용역 <br />
+                    구인구직 서비스! O2O(Online to Offline)방식으로 <br />
+                    운영되는, 한손에 잡히는 스마트한 인력사무소. 집잡!
+                </p>
+                <div class="download reveal reveal_BTT" data-delay="0.4">
+                    <a href="https://play.google.com/store/apps/details?id=com.isangsoandus.zipjob"
+                        class="download_google" target="_blank">
+                        <i class="fab fa-google-play"> </i>
+                        <p>구글플레이 다운로드</p>
+                    </a>
+                    <a href="./download/집잡서비스소개서.pdf" class="download_pdf" target="_blank">
+                        <i class="far fa-file-pdf"></i>
+                        <p>자사 모집 사업계획서</p>
+                    </a>
+                </div>
+            </div>
+            <div class="main_visual">
+                <img class="reveal reveal_BTT" data-delay="0.2" src="./images/main_visual.png" alt="메인비주얼이미지">
+            </div>
+        </div>
+    </main>
+    <section class="special">
+        <div class="youtube_wrap">
+            <div class="zipjob_video reveal reveal_BTT">
+                <video src="./images/[일자리 매칭 전문 플랫폼]내 손안의 인력사무소 '집잡' 더 쉽고 빠르게 구인구직! (1).mp4" width="550" height="500px"
+                    muted loop autoplay controls></video>
+            </div>
+            <a class="youtube reveal reveal_BTT" data-delay="0.2" href="https://www.youtube.com/@zipjob_official"
+                target="_blank">
+                <p>집잡<span>'s YouTube </span> 채널 바로가기</p>
+                <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
+        </div>
+        <div class="special_contents">
+            <div class="special_title section_title reveal reveal_BTT">
+                <p>special</p>
+                <h1 class="reveal reveal_BTT" data-delay="0.2">집잡은 무엇이 다른가요?</h1>
+            </div>
+            <ul class="special_list">
+                <li>
+                    <div class="list_img reveal reveal_BTT" data-delay="0.2">
+                        <img src="./images/special04.png" alt="스페셜이미지1">
+                    </div>
+                    <p class="list_title reveal reveal_BTT" data-delay="0.4">
+                        무작정 대기 <span>없어요!</span>
+                    </p>
+                    <p class="list_description reveal reveal_BTT" data-delay="0.6">
+                        인력사무소 앞에서 이른 아침부터 기다릴 필요가 없어요.
+                        집잡은 스마트폰 하나로 일자리를 구할 수 있습니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="list_img reveal reveal_BTT" data-delay="0.4">
+                        <img src="./images/special06.png" alt="스페셜이미지2">
+                    </div>
+                    <p class="list_title reveal reveal_BTT" data-delay="0.5">
+                        무작정 배정 <span>없어요!</span>
+                    </p>
+                    <p class="list_description reveal reveal_BTT" data-delay="0.7">
+                        오늘 어디서 일하게 될지 불안해 할 필요가 없어요.
+                        집잡은 내가 원하는 일자리를 간편하게 선택할 수 있습니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="list_img reveal reveal_BTT" data-delay="0.6">
+                        <img src="./images/special02.png" alt="스페셜이미지3">
+                    </div>
+                    <p class="list_title reveal reveal_BTT" data-delay="0.6">
+                        무기한 미수 <span>없어요!</span>
+                    </p>
+                    <p class="list_description reveal reveal_BTT" data-delay="0.8">
+                        사장님이 일자리를 등록하면 예치금이 미리 선입금 되고,
+                        작업이 완료되면 그 예치금에서 직원에게 자동 지급됩니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="list_img reveal reveal_BTT" data-delay="0.8">
+                        <img src="./images/special01.png" alt="스페셜이미지4">
+                    </div>
+                    <p class="list_title reveal reveal_BTT" data-delay="0.7">
+                        별점 관리
+                    </p>
+                    <p class="list_description reveal reveal_BTT" data-delay="0.9">
+                        사업자가 직원에게 별점을 주거나 확인 할 수 있어,
+                        직원을 채용하기 전에 직원의 업무 평판을 파악할 수 있습니다.
+                    </p>
+                </li>
+                <li>
+                    <div class="list_img reveal reveal_BTT" data-delay="1">
+                        <img src="./images/special05.png" alt="스페셜이미지5">
+                    </div>
+                    <p class="list_title reveal reveal_BTT" data-delay="0.8">
+                        일정관리
+                    </p>
+                    <p class="list_description reveal reveal_BTT" data-delay="1">
+                        집잡의 찜기능과 이력확인 기능을 활용해,
+                        중구난방으로 이루어지던 일용직 파견 일정을 섬세하게 설계할 수 있어요.
+                    </p>
+                </li>
+                <li>
+                    <div class="list_img reveal reveal_BTT" data-delay="1">
+                        <img src="./images/special03.png" alt="스페셜이미지6">
+                    </div>
+                    <p class="list_title reveal reveal_BTT" data-delay="0.9">
+                        현장관리
+                    </p>
+                    <p class="list_description reveal reveal_BTT" data-delay="1.1">
+                        집잡은 지역별로 지사 인력이 배치되어
+                        인력사무소에 준하는 관리 서비스를 구인자/구직자 모두에게 제공합니다.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about_inner section_inner">
+            <div class="about_title">
+                <h1 class="reveal reveal_BTT">인력사무소. 그 이상의 인력사무소</h1>
+                <p class="reveal reveal_BTT" data-delay="0.2">
+                    집잡은 시간적,공간적 제약을 초월하여 인력중개 시장을 스마트폰으로 한눈에
+                    살펴 볼 수 있고, 구직자/구인자 모두 간편하게 일자리 매칭을 이용할 수 있는
+                    일용직 전문 중개서비스 입니다.
+                </p>
+            </div>
+            <div class="about_img reveal reveal_BTT" data-delay="0.3">
+                <img src="./images/about_main.png" alt="집잡소개이미지">
+            </div>
+        </div>
+    </section>
+    <section class="about_bottom">
+        <div class="about_left about_contents">
+            <div class="img reveal reveal_BTT">
+                <img src="./images/icon_yellow.png" alt="집잡아이콘노랑">
+            </div>
+            <h2 class="title reveal reveal_BTT" data-delay="0.2">
+                어디서든 손쉽게 내 주변 일자리 탐색이<br />
+                가능한 위치기반 서비스
+            </h2>
+            <p class="reveal reveal_BTT" data-delay="0.35">
+                무작위 일터 배정은 이제 끝! 스마트폰을 사용하는 현재 위치에서 가장
+                가까운 순으로 일용직 일자리들이 나열돼요.
+                이제는 인력사무소에서 대기하지 말고 작업현장으로 바로 이동하세요.
+            </p>
+        </div>
+        <div class="about_right about_contents">
+            <div class="img reveal reveal_BTT">
+                <img src="./images/icon_blue.png" alt="집잡아이콘파랑">
+            </div>
+            <h2 class="title reveal reveal_BTT" data-delay="0.2">
+                오늘 하루 구인이 시급한 사장님을 위한<br />
+                최적의 일용직 모집 서비스
+            </h2>
+            <p class="reveal reveal_BTT" data-delay="0.35">
+                카페 알바생이 갑자기 출근하지 못할 때, 급하게 주변에 도움을 요청하기 어려운 상황일 때, 심지어 집 안에 벌레가 나타나 잡아 줄 사람이 필요할 때까지... 집잡은 모두가 사업자가 될 수
+                있고, 구직자가 될 수도 있어요.
+            </p>
+        </div>
+    </section>
+    <section class="process">
+        <div class="process_inner section_inner">
+            <div class="process_bg">
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT" data-delay="0.2"></span>
+            </div>
+            <div class="process_img reveal reveal_BTT" data-delay="0.4">
+                <img src="./images/process_img.png" alt="과정섹션이미지">
+            </div>
+            <ul class="process_description">
+                <h1 class="reveal reveal_BTT">과정이 어떻게 되나요?</h1>
+                <li class="reveal reveal_BTT" data-delay="0.2">
+                    <span>1</span>
+                    <p>
+                        구인이 필요한 사장님이 집잡에 마일리지를 충전한
+                        다음, 구인공고와 예치금을 등록합니다.
+                    </p>
+                </li>
+                <li class="reveal reveal_BTT" data-delay="0.4">
+                    <span>2</span>
+                    <p>
+                        구직이 필요한 직원이 집잡에 올라온 구인공고를 확인하고, 구직 신청을 합니다.
+                    </p>
+                </li>
+                <li class="reveal reveal_BTT" data-delay="0.6">
+                    <span>3</span>
+                    <p>
+                        사장님이 직원의 구직요청을 수락하면, 일터의
+                        정보와 직원의 정보가 서로에게 전달됩니다.
+                    </p>
+                </li>
+                <li class="reveal reveal_BTT" data-delay="0.8">
+                    <span>4</span>
+                    <p>
+                        계약된 업무가 마무리되면 미리 입금해둔 예치금에서
+                        직원의 급여가 정산됩니다.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="target">
+        <div class="section_title">
+            <p class="reveal reveal_BTT">TARGET</p>
+            <h1 class="reveal reveal_BTT" data-delay="0.2">집잡은 누가 이용할 수 있나요?</h1>
+        </div>
+        <ul class="target_list">
+            <li>
+                <div class="target_img reveal reveal_BTT" data-delay="0.2">
+                    <img src="./images/target01.png" alt="대학생이미지">
+                </div>
+                <h2 class="reveal reveal_BTT" data-delay="0.35">하루 단위로 일하길 원하는<br /> 대학생 및 투잡 직장인</h2>
+                <p class="reveal reveal_BTT" data-delay="0.4">
+                    장기 근무나 알바를 하기에는 시간적 여유가 없어,
+                    틈틈히 시간이 날 때마다 일을 하길 원하는 분들에게
+                    집잡은 최적의 구직 서비스입니다.
+                </p>
+            </li>
+            <li>
+                <div class="target_img reveal reveal_BTT" data-delay="0.4">
+                    <img src="./images/target02.png" alt="현장인력이미지">
+                </div>
+                <h2 class="reveal reveal_BTT" data-delay="0.45">현장에 긴급하게 사람이 필요한<br /> 인력소장,팀장님,사장님</h2>
+                <p class="reveal reveal_BTT" data-delay="0.6">
+                    유동적인 인력 고용을 통해 프로젝트 목표를
+                    완수해야 하는 건설현장, 사업체, 매장 등에 집잡은
+                    최적의 일용직 구인 서비스를 제공합니다.
+                </p>
+            </li>
+            <li>
+                <div class="target_img reveal reveal_BTT" data-delay="0.6">
+                    <img src="./images/target03.png" alt="전문가이미지">
+                </div>
+                <h2 class="reveal reveal_BTT" data-delay="0.55">전문화된 업무와 현장을 원하는<br /> 타일/도배등의 전문가</h2>
+                <p class="reveal reveal_BTT" data-delay="0.8">
+                    하루에서 일주일 단위로 완수해야 하는 프로젝트
+                    현장을 찾아 다니는 전문가/ 기술자 그룹에게 집잡은
+                    최적의 일정 관리 서비스를 제공합니다.
+                </p>
+            </li>
+        </ul>
+    </section>
+    <section class="section_wrap join">
+        <div class="section_inner join_inner">
+            <div class="join_bg bg">
+                <span class="reveal reveal_BTT"></span>
+                <span class="reveal reveal_BTT" data-delay="0.15"></span>
+            </div>
+            <div class="section_img join_img reveal reveal_BTT" data-delay="0.25">
+                <img src="./images/join_img.png" alt="간편한 회원가입">
+            </div>
+            <div class="section_description join_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    간편한 회원가입
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    아이디,비밀번호가 필요없습니다.
+                    집잡은 이름과 전화번호만 있으면 회원 인증 후 바로
+                    이용 가능합니다.
+                </h3>
+                <p class="reveal reveal_BTT" data-delay="0.5">
+                    다만, 구인구직 활동을 하기 위해선 프로필 정보와 서명(일용직계약서),계좌번호
+                    (급여통장)정보를 기입하고 인증을 받으셔야 합니다.
+                </p>
+                <p class="sub_dec reveal reveal_BTT" data-delay="0.5">
+                    회원가입 관련하여 집잡 개인정보 관리 규정을 확인하고 싶으시면 아래를 클릭하시면 됩니다.
+                </p>
+                <a href="" class="reveal reveal_BTT" data-delay="0.8">
+                    개인정보보호방침 전문 보기
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section_wrap apply">
+        <img class="bg_yellow" src="./images/bg_yellow.png" alt="배경색">
+        <div class="section_inner apply_inner">
+            <div class="section_description apply_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    일자리 구하기
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    마음에 드는 일자리가 있다면 지원하기를 누르세요.
+                    구인공고를 올린 사장님이 지원자들을 확인한 후에
+                    지원수락을 하면 이제 정식으로 일용직 계약이 성사가 된 것입니다.
+                </h3>
+                <p class="reveal reveal_BTT" data-delay="0.6">
+                    집잡 내 구인구직 활등은 인증된 회원만 가능합니다.
+                </p>
+                <p class="sub_dec reveal reveal_BTT" data-delay="0.6">
+                    구인구직의 절차와 그에 따른 규약을 확인하고 싶으시면 아래를 클릭하시면 됩니다.
+                </p>
+                <a href="" class="reveal reveal_BTT" data-delay="0.8">
+                    서비스 이용약관 전문 보기
+                </a>
+            </div>
+            <div class="section_img apply_img reveal reveal_BTT" data-delay="0.25">
+                <img class="img" src="./images/apply_img.png" alt="간편한 회원가입">
+            </div>
+            <div class="apply_bg bg">
+                <img class="reveal reveal_BTT" data-delay="0.4" src="./images/apply02.png" alt="">
+                <img class="reveal reveal_BTT" data-delay="0.6" src="./images/apply03.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="section_wrap choice">
+        <div class="section_inner choice_inner">
+            <div class="section_img choice_img">
+                <img class="img reveal reveal_BTT" data-delay="0.25" src="./images/choice01.png" alt="간편한 회원가입">
+            </div>
+            <div class="section_img choice_img2">
+                <img class="img reveal reveal_BTT" src="./images/choice02.png" alt="간편한 회원가입">
+            </div>
+            <div class="section_description choice_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    찜!하기 & 휴가가기
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    마음에 드는 일자리와 회사를 찜! 해두고 모아 볼 수 있어요.
+                    특히 찜 해둔 회사가 구인공고를 올리면 내 스마트폰으로
+                    자동으로 알림이 울립니다.
+                </h3>
+                <p class="sub_dec reveal reveal_BTT" data-delay="0.6">
+                    집잡 알람이 울리는게 싫다면 휴가가기 설정을 해보세요.
+                    휴가 중에 어떠한 구인구직 알람도 울리지 않습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section_wrap confirm">
+        <div class="section_inner confirm_inner">
+            <div class="section_description confirm_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    내 근로이력 확인하기
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    그동안 일했던 내 근로 이력을 월/연도 별로 모아 볼 수 있어요.
+                    이로써 내 일정관리, 수익관리가 한 눈에 가능합니다.
+                </h3>
+                <p class="sub_dec reveal reveal_BTT" data-delay="0.6">
+                    집잡의 수익액은 월급 실수령액 기준이며,4대보험 신고,갑근세 신고, 주휴수당/ 퇴직금 등은
+                    사업주가 부담합니다.
+                </p>
+            </div>
+            <div class="section_img confirm_img reveal reveal_BTT" data-delay="0.8">
+                <img class="img" src="./images/confirm.png" alt="간편한 회원가입">
+            </div>
+            <div class="confirm_bg bg">
+                <img class="reveal reveal_BTT" src="./images/confirm02.png" alt="근로이력 이미지">
+                <img class="reveal reveal_BTT" data-delay="0.2" src="./images/confirm03.png" alt="근로이력 이미지">
+                <img class="reveal reveal_BTT" data-delay="0.4" src="./images/confirm04.png" alt="근로이력 이미지">
+                <img class="reveal reveal_BTT" data-delay="0.7" src="./images/confirm05.png" alt="근로이력 이미지">
+            </div>
+        </div>
+    </section>
+    <section class="section_wrap find">
+        <img class="bg_blue" src="./images/bg_blue.png" alt="배경색">
+        <div class="section_inner find_inner reveal reveal_BTT">
+            <div class="section_img find_img reveal reveal_BTT" data-delay="0.2">
+                <img class="img" src="./images/find.png" alt="간편한 회원가입">
+            </div>
+            <div class="section_img find_img02 reveal reveal_BTT" data-delay="0.4">
+                <img class="img" src="./images/find02.png" alt="간편한 회원가입">
+            </div>
+            <div class="section_description find_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    일할 사람 구하기
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    근무지,모집업무,인원,근무날짜,출근시각,식사,통근 차량 여부 등을
+                    모두 선택할 수 있습니다. 그 외 다른 업무 요강은 구인제목에 간단하게
+                    기입하시면 됩니다.
+                </h3>
+                <p class="sub_dec reveal reveal_BTT" data-delay="0.6">
+                    구인공고를 올리기 전에 반드시 마일리지가 충전된 상태여야 합니다.
+                    근로자 인건비는 실 수령액 기준입니다.
+                    구인공고 등록시 인건비에서 수수료 7%가 포함된 금액이 예치금으로 올라갑니다.
+                </p>
+            </div>
+        </div>
+        <img class="bg_yellow" src="./images/bg_yellow.png" alt="배경색">
+    </section>
+    <section class="section_wrap estimate">
+        <div class="section_inner estimate_inner">
+            <div class="section_description estimate_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    일한 사람 평가하기
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    함께 일한 사람에 대한 평가를 별점으로 해주세요.
+                    구인공고를 올렸던 사장님의 평가 이후에 집잡이 해당 직원에게 근로수당을 지급하게 됩니다.
+                </h3>
+                <p class="sub_dec reveal reveal_BTT" data-delay="0.6">
+                    모집인원을 다 채우지 못해 남은 예치금은 근무 완료 다음날 통장으로 환수됩니다.
+                </p>
+            </div>
+            <div class="section_img estimate_img reveal reveal_BTT" data-delay="0.4">
+                <img class="img" src="./images/estimate.png" alt="간편한 회원가입">
+            </div>
+            <div class="estimate_bg bg">
+                <img class="reveal reveal_BTT" data-delay="0.6" src="./images/estimate02.png" alt="평가하기 이미지">
+                <img class="reveal reveal_BTT" data-delay="0.8" src="./images/estimate03.png" alt="평가하기 이미지">
+            </div>
+        </div>
+    </section>
+    <section class="section_wrap carrer">
+        <img class="bg_blue" src="./images/bg_blue.png" alt="배경색">
+        <div class="section_inner carrer_inner">
+            <div class="career_bg bg">
+                <img class="reveal reveal_BTT" data-delay="0.4" src="./images/career02.png" alt="이력 이미지">
+                <img class="reveal reveal_BTT" data-delay="0.2" src="./images/career03.png" alt="이력 이미지">
+                <img class="reveal reveal_BTT" src="./images/career04.png" alt="이력 이미지">
+            </div>
+            <div class="section_img carrer_img">
+                <img class="img reveal reveal_BTT" data-delay="0.6" src="./images/career.png" alt="간편한 회원가입">
+            </div>
+            <div class="section_description carrer_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    우리 회사 작업이력
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    그동안 우리 회사가 했던 작업 이력을 월/연도 별로 모아 볼 수 있습니다.
+                    이를 통해 예산관리, 세무회계(인건비 신고)를 처리할 수 있습니다.
+                </h3>
+                <p class="reveal reveal_BTT" data-delay="0.6">
+                    집잡의 명목 인건비는 일급 실수령액 기준이며,4대보험신고,갑근세 신고,
+                    주휴수당/퇴직금 등은 사업주가 부담해야 합니다.
+                </p>
+                <p class="sub_dec reveal reveal_BTT" data-delay="0.6">
+                    세무 관련하여 궁금한 사항은 1533-4768으로 전화하시면 됩니다.
+                </p>
+                <a class="reveal reveal_BTT" data-delay="0.8" href="">
+                    고객센터 전화하기
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="section_wrap region">
+        <div class="section_inner region_inner">
+            <div class="section_description region_description">
+                <h1 class="reveal reveal_BTT" data-delay="0.2">
+                    지역별 지사장 모집
+                </h1>
+                <h3 class="reveal reveal_BTT" data-delay="0.4">
+                    집잡의 꿈과 이상, 그리고 플랜이 어떤가요?
+                    집잡은 각 지역의 건설.노동현장에서 회원들을 관리 할
+                    지사장들을 모집하고 교육/훈련시키고 있습니다.
+                    <br /><br />
+                    집잡의 사업 모델 관련하여 궁금한 사항은 <br />
+                    <span style="color: var(--color-yellow); font-weight: bold;">1533-4768</span>로 전화하시길 바랍니다.
+                </h3>
+                <a class="reveal reveal_BTT" data-delay="0.6" href="">
+                    상담 전화하기
+                </a>
+            </div>
+            <div class="section_img region_img reveal reveal_BTT" data-delay="0.6">
+                <img class="img" src="./images/region.png" alt="간편한 회원가입">
+            </div>
+            <img class="bg_blue" src="./images/bg_blue.png" alt="배경색">
+            <img class="star reveal reveal_BTT" data-delay="0.8" src="./images/region02.png" alt="별">
+        </div>
+    </section>
+    <footer>
+        <div class="footer_inner">
+            <div class="footer_inform">
+                <div class="footer_title">
+                    <div class="footer_logo_wrap reveal reveal_BTT" data-delay="0.2">
+                        <div class="title_img01">
+                            <img src="./images/main_logo.png" alt="푸터 로고">
+                        </div>
+                        <div class="title_img02">
+                            <img src="./images/main_logo02.png" alt="푸터로고">
+                        </div>
+                    </div>
+                    <p class="reveal reveal_BTT" data-delay="0.3">
+                        일자리 매칭 전문 플랫폼, <span style="color: var(--color-blue); font-weight: bold;">ZIP</span><span
+                            style="color: var(--color-yellow); font-weight: bold;">JOB.</span>
+                    </p>
+                </div>
+                <div class="inform_wrap">
+                    <ul class="reveal reveal_BTT" data-delay="0.2">
+                        <li>법인명: 주식회사 이상</li>
+                        <li>대표자: 전병배</li>
+                        <li>사업자번호: 724-81-02855</li>
+                    </ul>
+                    <ul class="reveal reveal_BTT" data-delay="0.4">
+                        <li>직업정보제공사업: 울산 제 2023-2호</li>
+                        <li>사업장 소재지: 울산광역시 울주군 울밀로 2316</li>
+                    </ul>
+                    <ul class="reveal reveal_BTT" data-delay="0.6">
+                        <li>상담전화: 1533-4768</li>
+                        <li>팩스: 052-211-3601</li>
+                        <li>이메일: isangsodus@gmail.com</li>
+                    </ul>
+                </div>
+            </div><!-- footer_inform -->
+            <div class="footer_bottom">
+                <ul class="link">
+                    <li class="reveal reveal_BTT" data-delay="0.2">
+                        <a href="">
+                            <img src="./images/footer_logo01.png" alt="이상 소앤더스">
+                        </a>
+                    </li>
+                    <li class="reveal reveal_BTT" data-delay="0.3">
+                        <a href="">
+                            <img src="./images/footer_logo02.png" alt="인스타그램">
+                        </a>
+                    </li>
+                    <li class="reveal reveal_BTT" data-delay="0.4">
+                        <a href="">
+                            <img src="./images/footer_logo03.png" alt="블로그">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer_download_wrap">
+                    <button class="google_download reveal reveal_BTT" data-delay="0.3">
+                        구글플레이 다운로드
+                    </button>
+                    <p class="copylight reveal reveal_BTT" data-delay="0.5">
+                        © I.SANG so&dus. Copyright All Right Reserved 2022.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
